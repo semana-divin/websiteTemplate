@@ -24,19 +24,6 @@ body{
     background-repeat: no-repeat;
     scroll-behavior: smooth;
 }
-button{
-    border: none;
-    background-color: #000;
-    padding: .3cm;
-    height: 1cm;
-    width: 1cm;
-    border-radius: 50%;
-}
-button a{
-    color: #fff;
-    text-decoration: none;
-    
-}
 header{
     transition-duration: 0.5s;
     display: flex;
