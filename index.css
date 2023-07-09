@@ -1,0 +1,384 @@
+*{
+margin: 0%;
+}
+body::-webkit-scrollbar{
+    width: .1cm;
+    position: absolute;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(52, 52, 52);
+    border: none;
+    border-radius: 12px;
+    transition-duration: 0.5s;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(50, 34, 34);
+    transition-duration: 0.5s;
+}
+body::-webkit-scrollbar-track{
+    background-color: rgba(168, 168, 168, 0.732);
+}
+body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+button{
+    border: none;
+    background-color: #000;
+    padding: .3cm;
+    height: 1cm;
+    width: 1cm;
+    border-radius: 50%;
+}
+button a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+header{
+    transition-duration: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+header ul a{
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 2cm;
+    background-color: yellow;
+    margin: 0% 3px;
+    color: black;
+    transition-duration: 1s;
+    font-family: 'Oswald', sans-serif;
+}
+header ul a:hover{
+    background-color: rgb(17, 17, 2);
+    color: #fff;
+    transform: translateY(-.1cm);
+    transition-duration: 1s;
+}
+.menu-toggle {
+    display: none;
+    color: #000;
+    cursor: pointer;
+}
+.wa{
+    text-align: center;
+    font-size: 250%;
+    align-items: center;
+    font-family: 'Abril Fatface', cursive;
+}
+@media screen and (max-width: 700px){
+    
+    .menu-toggle {
+        display: block;
+        transition-duration: 1s;
+    }
+    .menu-toggle:hover{
+        color: yellow;
+        transition-duration: 1s;
+    }
+    header ul {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    header ul li {
+        margin-bottom: 5px;
+    }
+}
+.down{
+    height: 5cm;
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+}
+.down .members ul{
+    list-style-type: none;
+    margin-top: 1cm;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sticky{
+    background-color: rgba(0, 0, 0, 0.637);
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    backdrop-filter: blur(7px);
+}
+.boxes{
+    padding: 0 .6cm;
+    justify-content: space-evenly;
+    display: flex;
+    height: 10cm;
+    margin-bottom: 1cm;
+    scroll-behavior: smooth;
+}
+.box1{
+    border-radius: 12px;
+    background-image: url(ott.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(17, 17, 17);
+    width: 30%;
+    text-align: center;
+    padding-top: .8cm;
+    transition-duration: 600ms;
+}
+.box1:hover{
+    border-radius: 12px;
+    background-image: url(IMAGE.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    transition-duration: 3000ms;
+}
+.box2{
+    border-radius: 11px;
+    background-image: url(Vibes.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(13, 14, 13);
+    width: 30%;
+    padding-top: .7cm;
+    transition-duration: 600ms;
+}
+.box2:hover{
+    border-radius: 12px;
+    background-image: url(LILI.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    transition-duration: 3000ms;
+}
+.box3{
+    border-radius: 11px;
+    background-image: url(Indaburizi.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(13, 14, 13);
+    width: 30%;
+    padding-top: .7cm; 
+    transition-duration: 600ms;
+}
+.box3:hover{
+    border-radius: 12px;
+    background-image: url(Joga\ bola.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    transition-duration: 3000ms;
+}
+.list{
+    background-color: rgb(14, 14, 159);
+    padding: 1cm 0.6cm;
+    display: flex;
+    justify-content: space-evenly;
+    transition-duration: 0.5s;
+    scroll-behavior: smooth;
+}
+.billionaire{
+    background-image: url(Young\ b.jpg);
+    background-color: bisque;
+    background-size: 600px;
+    background-position: 510px -300px;
+    width: 30%;
+    height: 10cm;
+    transition-duration: 0.5s;
+}
+.billionaire #ceo{
+    color: white;
+    text-align: center;
+    padding-top: 2cm;
+    font-family: 'Oswald', sans-serif;
+    display: none;
+}
+.billionaire:hover #ceo{
+    display: block;
+}
+.billionaire .dark{
+    height: 100%;
+    width: 100%;
+    transition-duration: 0.5s;
+}
+.socials{
+    position: relative;
+    top: 25%;
+    text-align: center;
+    display: none;
+    transition-duration: 0.5s;
+}
+.socials a{
+    color: #fff;
+    background-color: #000;
+    padding: .3cm;
+    transition-duration: 0.5s;
+}
+.socials a:hover{
+    background-color: rgb(74, 12, 12);
+}
+.billionaire:hover .dark{
+    background-color: #000000db;
+    transition-duration: 0.6s;
+}
+.billionaire:hover .dark .socials{
+    display: block;
+    transition-duration: 0.5s;
+}
+
+/*brunea*/
+
+.brunette{
+    background-color: bisque;
+    width: 30%;
+    height: 10cm;
+    background-image: url(Brune!.jpeg);
+    background-color: bisque;
+    background-size: 600px;
+    background-position: 440px -250px;
+}
+.brunette #ceo{
+    color: white;
+    text-align: center;
+    padding-top: 2cm;
+    font-family: 'Oswald', sans-serif;
+    display: none;
+}
+.brunette:hover #ceo{
+    display: block;
+}
+.brunette .dark1{
+    height: 100%;
+    width: 100%;
+    transition-duration: 0.5s;
+}
+.socials1{
+    position: relative;
+    top: 25%;
+    text-align: center;
+    display: none;
+    transition-duration: 0.5s;
+}
+.socials1 a{
+    color: #fff;
+    background-color: #000;
+    padding: .3cm;
+    transition-duration: 0.5s;
+}
+.socials1 a:hover{
+    background-color: rgb(21, 21, 70);
+}
+.brunette:hover .dark1{
+    background-color: #000000db;
+    transition-duration: 0.6s;
+}
+.brunette:hover .dark1 .socials1{
+    display: block;
+    transition-duration: 0.5s;
+}
+/*liliose*/
+.liliose{
+    background-color: bisque;
+    width: 30%;
+    height: 10cm;
+    background-image: url(WhatsApp\ Image\ 2023-06-13\ at\ 00.23.16.jpeg);
+    background-color: bisque;
+    background-size: 400px;
+    background-position: 300px -50px;
+}
+.liliose #ceo{
+    color: white;
+    text-align: center;
+    padding-top: 2cm;
+    font-family: 'Oswald', sans-serif;
+    display: none;
+}
+.liliose:hover #ceo{
+    display: block;
+}
+.liliose .dark2{
+    height: 100%;
+    width: 100%;
+    transition-duration: 0.5s;
+}
+.socials2{
+    position: relative;
+    top: 25%;
+    text-align: center;
+    display: none;
+    transition-duration: 0.5s;
+}
+.socials2 a{
+    color: #fff;
+    background-color: #000;
+    padding: .3cm;
+    transition-duration: 0.5s;
+}
+.socials2 a:hover{
+    background-color: rgb(1, 54, 2);
+}
+.liliose:hover .dark2{
+    background-color: #000000db;
+    transition-duration: 0.6s;
+}
+.liliose:hover .dark2 .socials2{
+    display: block;
+    transition-duration: 0.5s;
+}
+@media screen and (width < 640px) {
+    .boxes{
+        display: contents;
+    }
+    .box1{
+        border-radius: 0;
+        width: 100%;
+        padding: 0;
+        margin: .3cm auto;
+        height: 6cm;
+    }
+    .box2{
+        border-radius: 0;
+        width: 100%;
+        padding: 0;
+        margin: .3cm auto;
+        height: 6cm;
+    }
+    .box3{
+        border-radius: 0;
+        width: 100%;
+        padding: 0;
+        margin: .3cm auto;
+        height: 6cm;
+    }
+    .list{
+        justify-content: unset;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    .billionaire{
+        min-width: 10cm;
+        margin-right: 10px;
+        scroll-snap-align: center;
+    }
+    .brunette{
+        min-width: 10cm;
+        margin-right: 10px;
+        scroll-snap-align: center;
+    }
+    .liliose{
+        min-width: 10cm;
+        margin-right: 10px;
+        scroll-snap-align: center;
+    }
+    
+}
