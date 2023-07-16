@@ -107,38 +107,76 @@ header ul a:hover{
     padding-bottom: .3cm;
 }
 .down{
+    font-family: 'Oswald', sans-serif;
     width: 100%;
     background-color: rgb(29, 29, 29);
     display: flex;
     justify-content: space-evenly;
 }
 .down .info{
+    color: white;
     height: 100%;
     width: 75%;
     padding: 1cm;
 }
 .info .input_box:focus{
-    width: 100%;
+    transform: translateY(.1cm);
     transition-duration: 0.6s;
     border: none;
 }
 .info .input_box{
+    box-shadow: rgba(0, 0, 0, 0.456) 0px 14px 28px, rgba(0, 0, 0, 0.774) 0px 10px 10px;
     padding: 0.1cm;
     border: none;
     background-color: #cccccc;
     text-align: start;
-    width: 95%;
+    width: 100%;
     height: 1cm;
     margin-bottom: .5cm;
     border-radius: 5px;
     transition-duration: 0.6s;
 }
+.block1 button{
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: none;
+    width: 3cm;
+    height: 1cm;
+    border-radius: 5px;
+    transition-duration: 0.9s;
+}
+.block1 button:hover{
+    transition-duration: 0.9s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.926) 0px 10px 10px;
+}
 .block2{
     padding-top: 1cm;
+    text-align: center;
+}
+.blocks a{
+    color: rgb(114, 114, 255);
+    text-decoration: none;
+    transition-duration: 0.6s;
+}
+.blocks a:hover{
+    color: rgb(215, 215, 255);
+    transition-duration: 0.6s;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.right a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.6s;
+}
+.right a:hover{
+    color: yellow;
 }
 @media screen and (width>493px) {
     .blocks{
         display: flex;
+        justify-content: space-between;
     }
     .block1{
         width: 50%;
@@ -147,6 +185,7 @@ header ul a:hover{
         padding-top: .5cm;
         width: 50%;
         text-align: center;
+        padding-left: 1cm;
     }
 }
 .sticky{
@@ -420,6 +459,5 @@ header ul a:hover{
         min-width: 10cm;
         margin-right: 10px;
         scroll-snap-align: center;
-    }
-    
+    }  
 }
