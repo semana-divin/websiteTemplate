@@ -16,39 +16,49 @@ margin: 0%;
 .intro a{
     text-decoration: none;
 }
-body::-webkit-scrollbar{
-    width: .2cm;
+::-webkit-scrollbar{
+    width: 0cm;
     position: fixed;
 }
-body::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb{
     background-color: rgb(52, 52, 52);
     border: none;
     border-radius: 12px;
     transition-duration: 0.5s;
 }
-body::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover{
     background-color: rgb(50, 34, 34);
     transition-duration: 0.5s;
 }
-body::-webkit-scrollbar-track{
+::-webkit-scrollbar-track{
     background-color: rgba(168, 168, 168, 0.732);
 }
 .list::-webkit-scrollbar{
     height: .2cm;
+}
+header ul li ul.dropdown li{
+    display: block;
+    transition-duration: 0.6s;
+}
+header ul li ul.dropdown {
     position: absolute;
+    transform: translateX(-1cm);
+    width: 20cm;
+    display: none;
+    transition-duration: 0.6s;
 }
-.list::-webkit-scrollbar-thumb{
-    background-color: rgb(52, 52, 52);
-    border: none;
-    border-radius: 12px;
-    transition-duration: 0.5s;
+ul li a:hover{
+background-color: rgb(116, 88, 52);
+text-align: center;
+transition-duration: 0.6s;
 }
-.list::-webkit-scrollbar-thumb:hover{
-    background-color: rgb(50, 34, 34);
-    transition-duration: 0.5s;
+ul li:hover ul.dropdown{
+    display: block;
+    transition-duration: 0.6s;
 }
-.list::-webkit-scrollbar-track{
-    background-color: rgba(168, 168, 168, 0.732);
+.dropdown-link{
+    margin: .3cm 0cm;
+    transition-duration: 0.6s;
 }
 body{
     background-size: cover;
@@ -74,7 +84,7 @@ header ul a{
     text-decoration: none;
     display: block;
     width: 2cm;
-    background-color: yellow;
+    background-color:rgb(116, 88, 52);
     margin: 0% 3px;
     color: black;
     transition-duration: 1s;
@@ -180,6 +190,14 @@ header ul a:hover{
     display: flex;
     justify-content: space-between;
 }
+hr{
+    height: .001px;
+    color: white;
+    background-color: white;
+}
+.middle{
+    transform: translateX(.5cm);
+}
 .right a{
     color: white;
     text-decoration: none;
@@ -212,7 +230,7 @@ header ul a:hover{
 }
 .boxes{
     padding: 0 .6cm;
-    justify-content: space-evenly;
+    justify-content: space-between;
     display: flex;
     height: 10cm;
     margin-bottom: 1cm;
@@ -274,7 +292,7 @@ header ul a:hover{
     transition-duration: 3000ms;
 }
 .list{
-    background-color: rgb(14, 14, 159);
+    background-color: rgb(116, 88, 52);
     padding: 1cm 0.6cm;
     display: flex;
     justify-content: space-evenly;
@@ -488,5 +506,13 @@ header ul a:hover{
 ::placeholder{
     color: black;
     opacity: .3;
-    
+
+}
+.words{
+    margin-left: .6cm;
+    margin-right: .6cm;
+    margin-bottom: 1cm;
+    font-family: 'Labrada', serif;
+    height: 5cm;
+    overflow-y: scroll;
 }
