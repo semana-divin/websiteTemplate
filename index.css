@@ -1,6 +1,21 @@
 *{
 margin: 0%;
 }
+.quote{
+    font-size: 82%;
+    transition-duration: 0.6s;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
+.intro{
+    margin: 1cm 0cm;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: 'Abril Fatface', cursive;
+}
+.intro a{
+    text-decoration: none;
+}
 body::-webkit-scrollbar{
     width: .2cm;
     position: fixed;
@@ -425,6 +440,9 @@ header ul a:hover{
         margin: .3cm auto;
         height: 6cm;
     }
+    .box1:hover{
+        border-radius: 0;
+    }
     .box2{
         border-radius: 0;
         width: 100%;
@@ -432,12 +450,18 @@ header ul a:hover{
         margin: .3cm auto;
         height: 6cm;
     }
+    .box2:hover{
+        border-radius: 0;
+    }
     .box3{
         border-radius: 0;
         width: 100%;
         padding: 0;
         margin: .3cm auto;
         height: 6cm;
+    }
+    .box3:hover{
+        border-radius: 0;
     }
     .list{
         justify-content: unset;
@@ -460,4 +484,9 @@ header ul a:hover{
         margin-right: 10px;
         scroll-snap-align: center;
     }  
+}
+::placeholder{
+    color: black;
+    opacity: .3;
+    
 }
