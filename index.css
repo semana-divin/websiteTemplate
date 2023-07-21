@@ -17,6 +17,14 @@ margin: 0%;
 .intro a{
     text-decoration: none;
 }
+.hireLinkTop{
+    color: rgb(116, 88, 52);
+    transition-duration: 1s;
+}
+.hireLinkTop:hover{
+    color: rgb(175, 107, 17);
+    transition-duration: 1s;
+}
 ::-webkit-scrollbar{
     width: 0cm;
     position: fixed;
