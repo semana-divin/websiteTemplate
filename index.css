@@ -44,7 +44,6 @@ header ul li ul.dropdown li{
 header ul li ul.dropdown {
     position: absolute;
     transform: translateX(-1cm);
-    width: 20cm;
     display: none;
     transition-duration: 0.6s;
 }
@@ -97,37 +96,35 @@ header ul a:hover{
     transform: translateY(-.1cm);
     transition-duration: 1s;
 }
-.menu-toggle {
-    display: none;
-    color: #000;
-    cursor: pointer;
-}
 .wa{
     text-align: center;
     font-size: 250%;
     align-items: center;
     font-family: 'Abril Fatface', cursive;
 }
-@media screen and (max-width: 700px){
-    
-    .menu-toggle {
-        display: block;
-        transition-duration: 1s;
-    }
-    .menu-toggle:hover{
-        color: yellow;
-        transition-duration: 1s;
+.toggle-button{
+    display: none;
+}
+@media screen and (width < 650px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
     }
     header ul {
         display: none;
-        flex-direction: column;
-        margin-top: 10px;
     }
-    header ul li {
-        margin-bottom: 5px;
+    .toggle-button{
+        position: absolute;
+        display: block;
+        right: 3rem;
+        font-size: 25px;
+        transition-duration: 0.6s;
+    }
+    .toggle-scroll{
+        transition-duration: 0.6s;
+        right: 1rem;
     }
 }
-
 #big_one{
     text-align: center;
     padding-bottom: .3cm;

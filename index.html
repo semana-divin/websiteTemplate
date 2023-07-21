@@ -36,18 +36,19 @@
                 <a href="#about"><b>About us</b></a>
             </li>
             <li>
-                <a href="#executives"><b>Our Team</b></a>
+                <a style="cursor: default;"><b>Our Team</b></a>
                 <ul class="dropdown">
                     <li><a href="@" class="dropdown-link">Members</a></li>
                     <li><a href="@" class="dropdown-link">Our Project</a></li>
+                    <li><a href="#executives" class="dropdown-link">Executives</a></li>
                 </ul>
             </li>     
             <li>
                 <a href=""><b>Contact us</b></a>
             </li>
         </ul>
-        <div class="menu-toggle" onclick="list()">
-            <i class="fas fa-bars"></i>
+        <div class="toggle-button">
+            <span class="bi bi-list"></span>
         </div>
     </header>
     <div class="main">
@@ -59,7 +60,7 @@
         </div>
         <div class="words">
             As you can see we're still a young Generation with more Goals to achieve.
-            Once upon  a time in high school,Three students named Chris,Divin and Kelly
+            Once upon  a time in high school, three students named Eloge, Divin and Kelly
             crossed paths.we were both pursuing degrees in Software development and 
             happened to be classmates in several courses. Initially,We were just acquaintances,
             but as We collaborated on various projects and studied together before!We 
@@ -161,14 +162,14 @@
                     <form action="" method="post" id="hire-form">
                         <input type="text" name="" id="" placeholder="Name" class="input_box"><br>
                         <input type="email" name="" id="" placeholder="Your Email" class="input_box"><br>
-                        <input type="tel" name="" id="" pattern="" placeholder="Tel: 078..." class="input_box">
+                        <input type="tel" name="" id="" inputmode="numeric" placeholder="Tel: 078..." class="input_box">
                         <br>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
                 <div class="block2">
                     This is the official &copy;KESLAB website. To get more info and inquiry about us <br><br>
-                    Contact this email: <a href="mailto:KESLABemail">KESLAB</a><br>
+                    Contact this email: <a href="mailto: to:keslab">KESLAB</a><br>
                     Call this number: <a href="tel:+250nimerozaKESLAB">NimerozaKESLAB</a>
                 </div>
             </div>
@@ -195,14 +196,12 @@
 </body>
 </html>
 <script>
-    var menuToggle = document.querySelector('.menu-toggle');
-    function list() {
-        var navLinks = document.querySelector('ul');
-        navLinks.classList.toggle('nav-active');
-    }
+    
     window.addEventListener("scroll", function () {
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
+        var header = document.querySelector("header");
+        var toggle = document.querySelector(".toggle-button");
+        header.classList.toggle("sticky", window.scrollY > 0);
+        toggle.classList.toggle("toggle-scroll", window.scrollY > 0);
     })
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
