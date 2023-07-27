@@ -651,3 +651,9 @@ hr{
         font-size: 13px;
     }
   }
+@media screen and (width > 1200px) {
+    .wa, .contact, .intro, .words, .boxes{
+        margin-left:3.5cm;
+        margin-right: 3.5cm;
+    }
+}
